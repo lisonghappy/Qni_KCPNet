@@ -1,0 +1,63 @@
+syntax = "proto2";
+
+package NetProtocol;
+
+enum CMD {
+    NONE = 0;
+    NetPing = 1;
+    Login = 2;
+    BagInfo = 3;
+}
+
+message NetMessage {
+    required NetMessageHeader header = 1;
+    optional NetMessageBody body = 2;
+}
+
+message NetMessageHeader {
+    required CMD cmd = 1;
+    required int32 seq = 2;
+    optional int32 errorCode = 3;
+}
+message NetMessageBody {
+    //ping
+    optional NetMessagePing netPing = 1;
+
+    //login
+    optional NetMessageRequestLogin requestLogin = 2;
+    optional NetMessageResponseLogin responseLogin = 3;
+
+    //bag info
+    optional NetMessageRequestBagInfo requestBagInfo = 4;
+    optional NetMessageResponseBagInfo responseBagInfo = 5;
+    
+}
+
+//netping
+message NetMessagePing {
+    required bool isOver = 1;
+}
+
+
+//login
+message NetMessageRequestLogin {
+    required string username = 1;
+    required string password = 2;
+}
+message NetMessageResponseLogin {
+    required bool success = 1;
+    optional string message = 2;
+}
+
+//bag info
+message NetMessageRequestBagInfo {
+    required int32 userId = 1;
+}
+message NetMessageResponseBagInfo {
+    repeated NetMessageBagInfoItem items = 1;
+}
+message NetMessageBagInfoItem {
+    required int32 id = 1;
+    required string name = 2;
+    required int32 quantity = 3;
+}

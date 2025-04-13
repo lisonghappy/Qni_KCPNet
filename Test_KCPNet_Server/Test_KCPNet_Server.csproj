@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qni_KCPNet\Qni_KCPNet.csproj" />
+    <ProjectReference Include="..\Test_KCPNet_NetProtocol\Test_KCPNet_NetProtocol.csproj" />
+  </ItemGroup>
+</Project>
