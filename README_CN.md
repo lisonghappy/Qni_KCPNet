@@ -1,12 +1,12 @@
 # Qni_KCPNet
-A reliable UDP communication network library based on KCP, which can be applied to Unity game server and client development. And implement network communication using Protobuf.
+基于 KCP 的可靠 UDP 通信网络库，可应用于 Unity 游戏服务器和客户端开发。并且实现使用 Protobuf 进行网络通信。
 
-[[中文文档]](./README_CN.md)
+[[英文文档]](./README.md)
 
 ## Hot to use
 
 ### Unity
-Please refer to the test project for the specific implementation. `Test_UnityProject`
+具体实现请查看测试工程。 `Test_UnityProject`
 
    ```cs
    // unity client
@@ -34,11 +34,11 @@ Please refer to the test project for the specific implementation. `Test_UnityPro
 
 ### Client (.net Core)
 
-Please refer to the test project for the specific implementation. `Test_KCPNet_Client`
+具体实现请查看测试工程。 `Test_KCPNet_Client`
 
 
 ### Server (.net Core)
-Please refer to the test project for the specific implementation. `Test_KCPNet_Server`
+具体实现请查看测试工程。 `Test_KCPNet_Server`
 
 ```cs
     //server
