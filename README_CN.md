@@ -1,7 +1,8 @@
 # Qni_KCPNet
 基于 KCP 的可靠 UDP 通信网络库，可应用于 Unity 游戏服务器和客户端开发。并且实现使用 Protobuf 进行网络通信。
 
-[[英文文档]](./README.md)
+
+[[English]](./README.md) | [中文]
 
 ## Hot to use
 

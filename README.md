@@ -1,7 +1,7 @@
 # Qni_KCPNet
 A reliable UDP communication network library based on KCP, which can be applied to Unity game server and client development. And implement network communication using Protobuf.
 
-[[中文文档]](./README_CN.md)
+[English] | [[中文]](./README_CN.md)
 
 ## Hot to use
 
